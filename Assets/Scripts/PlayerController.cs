@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
+    // member variable for animations
+    private Animator animator;
+
     // Public variables appear in the Inspector, so you can tweak them without editing code.
     public float moveSpeed = 4f;       // How fast the player moves left/right
     
@@ -19,6 +23,7 @@ public class PlayerController : MonoBehaviour
     {
         // Grab the Rigidbody2D attached to the Player object once at the start.
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -42,6 +47,35 @@ public class PlayerController : MonoBehaviour
             // Set vertical velocity to jumpForce (launch upward).
             // Horizontal velocity stays the same.
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
+
+        // for animations
+        SetAnimation(moveInput);
+    }
+
+    private void SetAnimation(float moveInput)
+    {
+        if (isGrounded)
+        {
+            if (moveInput == 0)
+            {
+                animator.Play("Player_Idle");
+            }
+            else
+            {
+                animator.Play("Player_Run");
+            }
+        }
+        else
+        {
+            if (rb.linearVelocityY > 0)
+            {
+                animator.Play("Player_Jump");
+            } 
+            else
+            {
+                animator.Play("Player_Fall");
+            }
         }
     }
 }
