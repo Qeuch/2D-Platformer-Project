@@ -133,7 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Coins_0
+      name: Bronze_0
       rect:
         serializedVersion: 2
         x: 3
@@ -141,7 +141,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -155,7 +155,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coins_1
+      name: Bronze_1
       rect:
         serializedVersion: 2
         x: 21
@@ -163,7 +163,7 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -177,7 +177,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coins_2
+      name: Bornze_2
       rect:
         serializedVersion: 2
         x: 39
@@ -185,7 +185,7 @@ TextureImporter:
         width: 6
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -199,7 +199,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coins_3
+      name: Bronze_3
       rect:
         serializedVersion: 2
         x: 55
@@ -207,7 +207,7 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -221,7 +221,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coins_4
+      name: Silver_0
       rect:
         serializedVersion: 2
         x: 3
@@ -229,7 +229,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -243,7 +243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coins_5
+      name: Silver_1
       rect:
         serializedVersion: 2
         x: 21
@@ -251,7 +251,7 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -265,7 +265,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coins_6
+      name: Silver_2
       rect:
         serializedVersion: 2
         x: 39
@@ -273,7 +273,7 @@ TextureImporter:
         width: 6
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -287,7 +287,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coins_7
+      name: Silver_3
       rect:
         serializedVersion: 2
         x: 55
@@ -295,7 +295,7 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -309,7 +309,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coins_8
+      name: Gold_0
       rect:
         serializedVersion: 2
         x: 3
@@ -317,7 +317,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -331,7 +331,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coins_9
+      name: Gold_1
       rect:
         serializedVersion: 2
         x: 21
@@ -339,7 +339,7 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -353,7 +353,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coins_10
+      name: Gold_2
       rect:
         serializedVersion: 2
         x: 39
@@ -361,7 +361,7 @@ TextureImporter:
         width: 6
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -375,7 +375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coins_11
+      name: Gold_3
       rect:
         serializedVersion: 2
         x: 55
@@ -383,7 +383,7 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -400,7 +400,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d715ea06af86ad449a2394f25495a6ae
     internalID: 0
     vertices: []
     indices: 
@@ -410,18 +410,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Coins_0: -2322180950842035098
-      Coins_1: -4893972260818282012
-      Coins_10: 7609282858266732271
-      Coins_11: -6288512792030432889
-      Coins_2: -6323751108524238166
-      Coins_3: 2722280177590742205
-      Coins_4: 6582046967323461550
-      Coins_5: 1942777921290549423
-      Coins_6: 8793606821965667882
-      Coins_7: 3444832735345940322
-      Coins_8: -4986890610287934012
-      Coins_9: 6143208460787649835
+      Bornze_2: -6323751108524238166
+      Bronze_0: -2322180950842035098
+      Bronze_1: -4893972260818282012
+      Bronze_3: 2722280177590742205
+      Gold_0: -4986890610287934012
+      Gold_1: 6143208460787649835
+      Gold_2: 7609282858266732271
+      Gold_3: -6288512792030432889
+      Silver_0: 6582046967323461550
+      Silver_1: 1942777921290549423
+      Silver_2: 8793606821965667882
+      Silver_3: 3444832735345940322
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
+    public int coins;
     // member variable for animations
     private Animator animator;
 
