@@ -11,7 +11,7 @@ public class DoubleJump : MonoBehaviour
     public LayerMask groundLayer;
     private bool isGrounded;
 
-    public float jumpForce = 10f;
+    public float jumpForce = 5f;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();   
