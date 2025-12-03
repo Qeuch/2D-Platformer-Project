@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 63b8cd5caaec657449599a59e8153e70
+guid: 3a788c16ed3b1a04c8d7ff63d9530f8c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7642980859614939925
-    second: Objects_0
-  - first:
-      213: -174804484191063705
-    second: Objects_1
+      213: -6152771587462501736
+    second: BouncePad_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,12 +100,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Objects_0
+      name: BouncePad_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 17
+        width: 16
         height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51b457af892511a60800000000000000
-      internalID: 7642980859614939925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Objects_1
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 0
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 76175ae6f38f29df0800000000000000
-      internalID: -174804484191063705
+      spriteID: 89a6e2907d6fc9aa0800000000000000
+      internalID: -6152771587462501736
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Objects_0: 7642980859614939925
-      Objects_1: -174804484191063705
+      BouncePad_0: -6152771587462501736
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
