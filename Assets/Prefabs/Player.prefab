@@ -215,7 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   coins: 0
   moveSpeed: 4
-  jumpForce: 8
+  jumpForce: 5
   groundCheck: {fileID: 8299052681940007065}
   groundCheckRadius: 0.2
   groundLayer:
@@ -238,7 +238,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  jumpForce: 10
+  jumpForce: 5
 --- !u!95 &5407749522345020091
 Animator:
   serializedVersion: 7
