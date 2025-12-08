@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
     {
         startMainMenu.SetActive(false);
         levelSelect.SetActive(true);
+        Time.timeScale = 1;
     }
 
     public void QuitGame()
