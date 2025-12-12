@@ -49,7 +49,7 @@ public class PlayerHealth : MonoBehaviour
         spriteRenderer.color = Color.white;
     }
 
-    private void UpdateHealthBar()
+    public void UpdateHealthBar()
     {
         if (healthImage != null)
         {
