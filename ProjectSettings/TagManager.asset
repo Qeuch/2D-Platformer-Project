@@ -7,6 +7,8 @@ TagManager:
   - Damage
   - CoinText
   - Bouncepad
+  - Strawberry
+  - Banana
   layers:
   - Default
   - TransparentFX
