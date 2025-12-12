@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
     public GameObject levelSelect;
     public TMP_InputField cheatInput;
     public CheatCodeManager cheatCodeManager;
-
+    public PlayerController player;
     public void StartGame(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
@@ -30,15 +30,48 @@ public class MainMenu : MonoBehaviour
 
     public void toggleCheat()
     {
-        cheatInput.gameObject.SetActive(true);
+        if (cheatInput.gameObject.activeSelf)
+        {
+            cheatInput.gameObject.SetActive(false);
+        } else
+        {
+            cheatInput.gameObject.SetActive(true);
+        }
+     
     }
 
     public void SubmitCheat()
     {
-        if (cheatInput != null && cheatCodeManager != null)
+        if (cheatInput != null)
         {
-            cheatCodeManager.checkCheats(cheatInput.text);
+            CheatCodeManager cheatManager = FindFirstObjectByType<CheatCodeManager>();
+            if (cheatManager != null)
+            {
+            cheatManager.checkCheats(cheatInput.text);
+            cheatInput.text = "";
+                
+            } else
+            {
+                Debug.LogWarning("No cheat manager found");
+            }
+        }
+    }
+
+    public void DisableCheat()
+    {
+        CheatCodeManager cheatManager = FindFirstObjectByType<CheatCodeManager>();
+        
+        if ( cheatManager != null)
+        {
+            cheatManager.godModeActive = false;
+            cheatManager.bunnyHopActive = false;
+            
+        }
+
+        if (cheatInput != null)
+        {
             cheatInput.text = "";
         }
+
     }
 }

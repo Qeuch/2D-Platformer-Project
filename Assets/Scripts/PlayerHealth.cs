@@ -21,6 +21,12 @@ public class PlayerHealth : MonoBehaviour
         // Get the SpriteRenderer component attached to the Player
         spriteRenderer = GetComponent<SpriteRenderer>();
         UpdateHealthBar();
+
+        CheatCodeManager cheatManager = FindFirstObjectByType<CheatCodeManager>();
+        if (cheatManager != null)
+        {
+            godMode = cheatManager.godModeActive;
+        }
     }
 
     // Method to reduce health when damage is taken

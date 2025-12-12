@@ -26,6 +26,18 @@ public class PlayerController : MonoBehaviour
         // Grab the Rigidbody2D attached to the Player object once at the start.
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        CheatCodeManager cheatManager = FindFirstObjectByType<CheatCodeManager>();
+        if (cheatManager != null)
+        {
+            if (cheatManager.bunnyHopActive)
+            {
+                extraJumpsValue = 1000;
+            } else
+            {
+                extraJumpsValue = 1;
+            }
+        }
     }
 
     void Update()
