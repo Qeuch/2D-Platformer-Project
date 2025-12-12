@@ -24,6 +24,9 @@ public class PlayerHealth : MonoBehaviour
     // Method to reduce health when damage is taken
     public void TakeDamage()
     {
+        if (CheatCodeManager.Instance != null && CheatCodeManager.Instance.godModeActive)
+            return;
+
         health -= damageAmount; // subtract damage amount
         UpdateHealthBar();
         StartCoroutine(BlinkRed()); // briefly flash red
