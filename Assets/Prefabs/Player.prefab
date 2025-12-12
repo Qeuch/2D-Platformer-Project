@@ -257,4 +257,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   health: 100
   healthImage: {fileID: 0}
+  godMode: 0
   damageAmount: 25

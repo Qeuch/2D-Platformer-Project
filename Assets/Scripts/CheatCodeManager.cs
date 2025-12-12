@@ -1,26 +1,33 @@
+using TMPro;
 using UnityEngine;
 
 public class CheatCodeManager : MonoBehaviour
 {
-    public string input = "";
+
+
     public string godMode = "GODMODE";
     public string bunnyHop = "BUNNYHOP";
-    // Update is called once per frame
- 
-    void checkCheats ()
-    {
-        if (input == godMode)
-        {
 
+    public PlayerHealth playerhealth;
+    // Update is called once per frame
+
+
+
+ 
+    public void checkCheats(string cheat)
+    {
+        if (cheat == godMode)
+        {
+            playerhealth.godMode = true;
         }
 
-        if (input == bunnyHop)
+        if (cheat == bunnyHop)
         {
 
         }
     }
 
-    void activateCheats()
+    public void activateCheats()
     {
 
 

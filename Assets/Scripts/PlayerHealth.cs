@@ -7,12 +7,14 @@ public class PlayerHealth : MonoBehaviour
     // Starting health value for the Player
     public int health = 100;
     public Image healthImage;
+    public bool godMode = false;
 
     // Amount of damage the Player takes when hit
     public int damageAmount = 25;
 
     // Reference to the Player's SpriteRenderer (used for flashing red)
     private SpriteRenderer spriteRenderer;
+
 
     private void Start()
     {
@@ -24,15 +26,14 @@ public class PlayerHealth : MonoBehaviour
     // Method to reduce health when damage is taken
     public void TakeDamage()
     {
-        if (CheatCodeManager.Instance != null && CheatCodeManager.Instance.godModeActive)
-            return;
+        if (!godMode)
+        {
+            health -= damageAmount; // subtract damage amount
+            UpdateHealthBar();
+            StartCoroutine(BlinkRed()); // briefly flash red
 
-        health -= damageAmount; // subtract damage amount
-        UpdateHealthBar();
-        StartCoroutine(BlinkRed()); // briefly flash red
-
-        SoundManager.Instance.PlaySFX("HURT");
-
+            SoundManager.Instance.PlaySFX("HURT");
+        }
         // If health reaches zero or below, call Die()
         if (health <= 0)
         {

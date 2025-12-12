@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     public GameObject startMainMenu;
     public GameObject levelSelect;
     public TMP_InputField cheatInput;
+    public CheatCodeManager cheatCodeManager;
 
     public void StartGame(string sceneName)
     {
@@ -34,9 +35,9 @@ public class MainMenu : MonoBehaviour
 
     public void SubmitCheat()
     {
-        if (cheatInput != null)
+        if (cheatInput != null && cheatCodeManager != null)
         {
-            cheatManager.checkCheat(cheatInput.text);
+            cheatCodeManager.checkCheats(cheatInput.text);
             cheatInput.text = "";
         }
     }
