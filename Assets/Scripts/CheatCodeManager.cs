@@ -14,8 +14,6 @@ public class CheatCodeManager : MonoBehaviour
             return;
         }
 
-
-
         DontDestroyOnLoad(gameObject);
     }
 
